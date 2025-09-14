@@ -1,0 +1,8 @@
+.vscode
+__debug_bin*
+.DS_Store
+.idea
+nats.creds
+
+.env
+go.work*
