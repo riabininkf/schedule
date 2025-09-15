@@ -30,8 +30,6 @@ func TestTaskQueue(t *testing.T) {
 		assertStats(t, taskQueue.Stats(), 1, capacityBytes)
 	})
 
-	// ... existing code ...
-
 	t.Run("positive case", func(t *testing.T) {
 		capacityBytes := taskSizeBytes * 2
 
@@ -47,8 +45,6 @@ func TestTaskQueue(t *testing.T) {
 		assertStats(t, taskQueue.Stats(), 1, capacityBytes)
 	})
 }
-
-// ... existing code ...
 
 func assertStats(t *testing.T, stats schedule.QueueStats, tasks uint64, capacityBytes uint64) {
 	t.Helper()
